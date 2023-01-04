@@ -54,7 +54,6 @@ client.on('interactionCreate', async interaction => {
                 const channel = interaction.channel;
                 const embed = new Discord.EmbedBuilder()
                 embed.setDescription(line)
-                embed.setColor("lime")
                 if (name != "NULL")
                     embed.setAuthor({ name: name, iconURL: result })
                 channel.send({
